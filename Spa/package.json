@@ -8,18 +8,22 @@
   },
   "main": "index.tsx",
   "scripts": {
-    "serve": "webpack-dev-server --mode development --port 5100",
+    "start": "react-app-rewired start",
     "build": "webpack --mode production",
     "lint": "./node_modules/eslint/bin/eslint"
   },
   "author": "ThunderDev1",
   "license": "ISC",
   "dependencies": {
+    "antd": "^4.0.3",
     "axios": "^0.19.0",
+    "babel-plugin-import": "^1.13.0",
     "connected-react-router": "^6.6.1",
+    "customize-cra": "^0.9.1",
     "history": "^4.10.1",
     "oidc-client": "^1.9.1",
     "react": "^16.12.0",
+    "react-app-rewired": "^2.1.5",
     "react-dom": "^16.12.0",
     "react-hot-loader": "^4.12.18",
     "react-redux": "^7.1.3",
