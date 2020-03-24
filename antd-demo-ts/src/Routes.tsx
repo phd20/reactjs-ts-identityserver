@@ -52,13 +52,14 @@ const Routes = (props: RoutesModuleProps) => {
 
   return (
     <React.Fragment>
-      <Nav isConnected={isConnected} path={props.location.pathname} />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/counter" component={Counter} />
-        <Route path="/user" component={UserInfo} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
+      <Nav isConnected={isConnected} path={props.location.pathname}>
+        <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/counter" component={Counter} />
+            <Route path="/user" component={UserInfo} />
+            <Route path="/contact" component={Contact} />
+        </Switch>
+      </Nav>
     </React.Fragment>
   );
 };
